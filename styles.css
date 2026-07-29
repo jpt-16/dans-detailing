@@ -312,10 +312,19 @@ a { color: inherit; text-decoration: none; }
 /* Footer */
 .footer {
   padding: 40px clamp(20px, 5vw, 56px);
-  display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap;
   font-size: 13px; opacity: 0.55;
 }
+.footer-row { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
 .footer-links { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
+.credit {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid oklch(96% 0.01 100 / 0.1);
+  text-align: center;
+  font-size: 12px;
+}
+.credit a { color: inherit; text-decoration: underline; transition: color .2s; }
+.credit a:hover { color: var(--accent); }
 .ig-link { display: flex; align-items: center; gap: 6px; transition: color .2s; }
 .ig-link:hover { color: var(--accent); }
 .ig-icon { width: 16px; height: 16px; flex-shrink: 0; }
