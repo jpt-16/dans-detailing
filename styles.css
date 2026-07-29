@@ -208,6 +208,26 @@ a { color: inherit; text-decoration: none; }
 .price-desc { font-size: 13px; opacity: 0.75; line-height: 1.5; margin-bottom: 14px; }
 .price-cta { font-size: 13px; font-weight: 800; text-transform: uppercase; }
 
+.addons { margin-top: 40px; }
+.addons-eyebrow { margin-bottom: 16px; }
+.addon-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  background: var(--bg-2);
+  border-radius: 16px;
+  padding: 22px 28px;
+  cursor: pointer;
+  transition: background .3s, color .3s;
+}
+.addon-card:hover { background: var(--accent); color: var(--bg); }
+.addon-card:hover .addon-desc { opacity: 0.75; }
+.addon-title { font-weight: 800; font-size: 16px; text-transform: uppercase; margin-bottom: 4px; }
+.addon-desc { font-size: 13px; opacity: 0.65; line-height: 1.5; }
+.addon-price { font-family: 'Anton', sans-serif; font-size: 28px; white-space: nowrap; }
+
 /* Proof / Reviews */
 .proof { padding: clamp(70px, 10vw, 120px) clamp(20px, 5vw, 56px); }
 .rating { font-size: 14px; font-weight: 700; }
